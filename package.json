@@ -2,10 +2,20 @@
   "name": "socket_examples",
   "version": "1.0.0",
   "description": "Examples of sockets and web sockets in node.",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "simple_telnet":  "nodemon simple_telnet_socket_server.js",
+    "simple_404":     "nodemon simple_404_server.js",
+    "simple_404_one": "nodemon simple_404_one_line.js",
+    "simple_web":     "nodemon simple_web_socket/server.js",
+    "simple_express": "nodemon simple_web_socket/server_express.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "ws": "^6.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
 }
