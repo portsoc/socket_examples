@@ -1,0 +1,11 @@
+{
+  "name": "ws_socket_examples",
+  "version": "1.0.0",
+  "description": "Examples of sockets and web sockets in node.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
