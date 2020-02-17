@@ -1,15 +1,15 @@
-const PORT = 9999;
-const net = require('net')
+const PORT = process.env.PORT || 9999;
+const net = require('net');
 
 function listener(socket) {
-    console.log('Connection established.');
-    socket.on('data', d => {
-        console.log(`Reveived: ${d}`);
-    });
+  console.log('Connection established.');
+  socket.on('data', d => {
+    console.log(`Received: ${d}`);
+  });
 }
 
-net.createServer(listener).listen( PORT, () => {
-    console.log( `use telnet ${require('os').networkInterfaces().en0[1].address} ${PORT}` );
+net.createServer(listener).listen(PORT, () => {
+  console.log(`use telnet 127.0.0.1 ${PORT}`);
 });
 
 // use with

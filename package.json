@@ -2,13 +2,6 @@
   "name": "socket_examples",
   "version": "1.0.0",
   "description": "Examples of sockets and web sockets in node.",
-  "scripts": {
-    "simple_telnet":  "nodemon simple_telnet_socket_server.js",
-    "simple_404":     "nodemon simple_404_server.js",
-    "simple_404_one": "nodemon simple_404_one_line.js",
-    "simple_web":     "nodemon simple_web_socket/server.js",
-    "simple_express": "nodemon simple_web_socket/server_express.js"
-  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -16,6 +9,13 @@
     "ws": "^6.2.1"
   },
   "devDependencies": {
-    "nodemon": "^1.18.10"
+    "eslint": "^6.8.0",
+    "eslint-config-semistandard": "^15.0.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "nodemon": "^2.0.2"
   }
 }
